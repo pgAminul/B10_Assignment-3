@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- DaisyUI CDN  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Goggle Font CDN  -->
+
+    <!-- Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/014e5a97b0.js" crossorigin="anonymous"></script>
+    
+</head>
+<style>
+  
+</style>
+<body>
+    <header class="container mx-auto">
+        <nav class="mx-auto mt-2 ">
+            <div class="navbar">
+
+                <div class="navbar-start">
+                   <h2 class="md:text-3xl font-bold "><i class="fa-solid fa-arrow-right -rotate-45 bg-customYellow p-1 text-1.5xl rounded-full"></i> Rinterio</h2>
+                </div>
+
+                <div class="navbar-center hidden lg:block ">
+                    <ul class="grid lg:grid-cols-5 text-gray-500 cursor-pointer">
+                        <li class="text-black font-bold">Home</li>
+                        <li>Services</li>
+                        <li>Portfolio</li>
+                        <li>Blogs</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+                <div class="navbar-end ">
+                    <div class="hidden md:block">
+                        <button class="btn  btn-circle bg-white mr-2">
+                            <i class="fa-solid fa-magnifying-glass text-gray-500 text-2xl"></i>
+                        </button>
+                        <button class="btn bg-white btn-circle mr-2">
+                            <div class="indicator">
+                                <i class="fa-solid fa-cart-shopping text-gray-500 text-2xl"></i>
+                        
+                            </div>
+                        </button>
+                        
+                        <button class=" btn bg-customYellow rounded-3xl font-bold">
+                            Book Consult <i class="fa-solid fa-arrow-right -rotate-45 bg-black p-1.5 rounded-full text-white"></i>
+                        </button>
+                    </div>
+                </div>
+                
+
+                <div class="navbar-end md:hidden">
+                    <button class="btn bg-white btn-circle">
+                        <div class="indicator">
+                            <i class="fa-solid fa-bars text-2xl text-gray-500 "></i>
+                    
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <section>
+            <div class="hero">
+                <div class="hero-content text-center ">
+                    <div class="">
+                        <img src="./images/banner.png" alt="" class="mx-auto py-3 md:py-7">
+                        <h1 class="text-3xl md:text-4xl lg:text-6xl max-w-full md:max-w-6xl mx-auto font-bold">A barn house of this design has a striking appearance</h1>
+                        <p class="py-6 md:max-w-4xl  mx-auto text-gray-500">
+                            The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek
+                            metal accents, and large windows that flood the space with natural light.
+                        </p>
+                        <button class=" btn bg-greenTransparent  rounded-3xl font-bold mt-2">
+                            View Details <i class="fa-solid fa-arrow-right -rotate-45 bg-customYellow p-2 text rounded-full text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </header>
+
+   <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            customYellow: '#ABEF5F',
+            greenTransparent: 'rgba(171, 239, 95, 0.5)',
+          }
+        }
+      }
+    }
+  </script>
+</body>
+</html>
