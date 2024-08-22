@@ -10,7 +10,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Goggle Font CDN  -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <!-- Font Awesome Kit -->
     <script src="https://kit.fontawesome.com/014e5a97b0.js" crossorigin="anonymous"></script>
     
@@ -20,11 +22,13 @@
 </style>
 <body>
     <header class="container mx-auto">
+
+        <!-- Navbar Start Here -->
         <nav class="mx-auto mt-2 ">
             <div class="navbar">
 
-                <div class="navbar-start">
-                   <h2 class="md:text-3xl font-bold "><i class="fa-solid fa-arrow-right -rotate-45 bg-customYellow p-1 text-1.5xl rounded-full"></i> Rinterio</h2>
+                <div class="navbar-start ">
+                   <h2 class="text-3xl font-bold w-96 md:w-max"><i class="fa-solid fa-arrow-right -rotate-45 bg-customYellow p-1 text-1.5xl rounded-full"></i> Rinterio</h2>
                 </div>
 
                 <div class="navbar-center hidden lg:block ">
@@ -65,7 +69,7 @@
                 </div>
             </div>
         </nav>
-
+        <!-- Header Start Here -->
         <section>
             <div class="hero">
                 <div class="hero-content text-center ">
@@ -83,8 +87,94 @@
                 </div>
             </div>
         </section>
-
+       
     </header>
+
+    <!-- About Us section -->
+    <section class="bg-gray-100 ">
+        <!-- First Part -->
+        <div class="container mx-auto py-16 grid lg:grid-cols-2 gap-x-6">
+            <div>
+        <!-- About Header content -->
+                <div>
+                    <img src="./images/Vector.png" class="hidden lg:block" alt=""> 
+    
+    <!-- About Title -->
+                    <div class="lg:ml-20 mt-4 lg:mt-0 lg:text-left text-center ">
+                        <button class="btn bg-white rounded-full px-5 mb-5 mt-2"><i class="fa-solid fa-arrow-right"></i> About Us</button>
+                        <h2 class="text-3xl font-bold mb-5">We design thoughtful, liveable spaces</h2>
+                        <p class="text-gray-500">The barn house captivates with its blend of rustic charm and
+                        modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                    </div>
+                </div>
+        <!-- about card  -->
+           <div class="grid md:grid-cols-2 lg:grid-cols-1  w-11/12 md:gap-x-3 lg:w-full mx-auto">
+
+            <div class="card card-side bg-base-100 shadow-md pl-10 mt-9 lg:ml-20">
+                <figure>
+                    <img src="./images/commercial.png" alt="" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">Commercial</h2>
+                    <p class="text-gray-500">The barn house captivates with its blend of rustic charm and modern.</p>
+            
+                </div>
+            </div>
+            <div class="card card-side bg-base-100 shadow-md pl-10 mt-3 md:mt-9 lg:mt-3 lg:ml-20">
+                <figure>
+                    <img src="./images/residential.png" alt="" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">Residential</h2>
+                    <p class="text-gray-500">The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+            </div>
+
+           </div>
+            </div>
+
+            <!-- About Us Image -->
+             <div class="mx-auto mt-6 lg:mt-0">
+                <img src="./images/Rectangle.png" class="px-5 md:mx-0" alt="">
+             </div>
+        </div>
+
+        <!-- Secound Part -->
+         <div class="container mx-auto w-11/12 md:w-full">
+            <div class="text-center">
+                <button class="btn rounded-full bg-white"><i class="fa-solid fa-arrow-right"></i>How We Works</button>
+                <h2 class="text-4xl font-bold my-3">Our Works Process</h2>
+                <p class="lg:w-6/12 md:10/12 mx-auto text-gray-500">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek
+                metal accents.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-4 lg:ml-20 lg:mr-10 mt-8">
+                <div class="bg-pink-200 py-8 px-6 rounded-lg">
+                    <img src="./images/concept.png" alt="">
+                    <h2 class="card-title my-3 ">Concept</h2>
+                    <p class="text-gray-600">The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+
+                <div class="bg-yellow-300 py-8 px-6 rounded-lg">
+                    <img src="./images/flow-chart.png" alt="">
+                    <h2 class="card-title my-3 ">Design Process</h2>
+                    <p class="text-gray-600">The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+
+                <div class="bg-green-300 py-8 px-6 rounded-lg">
+                    <img src="./images/vision.png" alt="">
+                    <h2 class="card-title my-3 ">Supervision</h2>
+                    <p class="text-gray-600">The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+
+                <div class="bg-blue-400 py-8 px-6 rounded-lg">
+                    <img src="./images/budget-planning.png" alt="">
+                    <h2 class="card-title my-3 ">Budget Planning</h2>
+                    <p class="text-gray-600">The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+            </div>
+         </div>
+    </section>
 
    <script>
     tailwind.config = {
@@ -93,10 +183,24 @@
           colors: {
             customYellow: '#ABEF5F',
             greenTransparent: 'rgba(171, 239, 95, 0.5)',
+            
           }
+          
         }
       }
     }
+
+     const defaultTheme = require('tailwindcss/defaultTheme')
+
+        module.exports = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'Manrope': ['"Manrope"', ...defaultTheme.fontFamily.sans],
+                    },
+                }
+            }
+        }
   </script>
 </body>
 </html>
